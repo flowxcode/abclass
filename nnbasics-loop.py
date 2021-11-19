@@ -10,6 +10,7 @@ import time
 from termcolor import colored
 # Read in the data from the csv file
 df = pd.read_csv('AAPL.csv')
+print(len(df))
 # Reduce the column names to lower case
 df.columns = ['date', 'open', 'high', 'low', 'close', 'adjclose', 'volume']
 # compute the change to use as a guide in backtesting
